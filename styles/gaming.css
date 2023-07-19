@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
-
-
-/* *{
+*{
     margin: 0;
-    padding: 0;
-} */
-
+}
 /* common shared */
 body {
     font-family: Work Sans;
 }
 
 /* navbar */
-nav {
+nav {padding-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,7 +63,9 @@ nav>ul li {
 
 
 /* banner-section */
-
+.banner{
+    padding: 25px 0px;
+}
 .banner-title {
     color: #0B0223;
     /* text-align: center; */
@@ -79,7 +77,7 @@ nav>ul li {
 }
 
 .banner-goat {
-    /* text-align: center; */
+    padding-top: 80px;
     font-size: 5.93rem;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -126,12 +124,10 @@ nav>ul li {
     background-color: #FFF;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
 
 }
 
 .banner-content-container {
-    /* border: 5px solid red; */
 
     background-image: url('../images/group\ 14.png');
     background-repeat: no-repeat;
@@ -139,9 +135,6 @@ nav>ul li {
     width: 60%;
     display: flex;
     align-items: center;
-    /* align-items: center; */
-    /* border: 1px solid red; */
-
 
 }
 
@@ -150,10 +143,6 @@ nav>ul li {
     left: 120px;
 }
 
-.banner-button {
-    /* border: 1px solid red; */
-    /* text-align: center; */
-}
 
 .banner-img {
     display: flex;
@@ -210,12 +199,6 @@ nav>ul li {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
-.card p {
-    color: #534C64;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.87rem;
-}
 
 /* play games section */
 .play-games {
@@ -371,7 +354,6 @@ nav>ul li {
 
 
 
-
 /* responsive */
 @media screen and (max-width:576px) {
 
@@ -398,13 +380,85 @@ nav>ul li {
     }
 
     .banner-content-container {
-        /* border: 1px solid rebeccapurple; */
         margin-top: 5px;
         width: auto;
         background-size: contain;
         background-position: center;
         flex-direction: column;
     }
+/* previous.......................................................... */
+
+
+    /* online games */
+
+    .card-container {
+        flex-direction: column;  
+        gap: 200px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+
+
+
+    /* play games */
+    .play-games{
+        flex-direction: column;
+    }
+    .play-games-img .big-img {
+        /* justify-content: center; */
+        width: 90%;
+    }
+    .play-games-img .small-img{
+        height: 50%;
+        width: 40%;
+    }
+    .games-content-container {
+        margin-top: 150px;
+    }
+
+
+
+
+/* games category responsive */
+.game-button {
+    background: #FFF;
+    padding: 0;
+    color: #0B0223;
+    font-size: 1.13rem;
+    font-weight: 600;
+    gap: 5px;
+}
+.btn-list{
+    flex-direction: column;
+}
+.list-1{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* footer resposive */
+.footer-section ul{
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-right: 15px
+}
+.footer-section .icons{
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.policy{
+    gap: 20px;
+}
+.footer-section .social{
+    gap: 70px;
+}
 
 }
 
@@ -422,5 +476,39 @@ nav>ul li {
     .banner-content-container {
         width: auto;
     }
+
+    /* previous............................................................... */
+
+
+    /* online games */
+    .card-container {
+        flex-direction: column;  
+        gap: 200px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    /* play games */
+    .play-games{
+        flex-direction: column;
+    }
+    .play-games-content{
+        margin-top: 120px;
+    }
+    /* game category */
+    .btn-list{
+        flex-direction: column;
+    }
+    .list-1{
+        margin-bottom: 30px;
+    }
+
+    /* footer */
+
+    .footer-section ul {
+        flex-wrap: wrap;
+        padding-right: 20px;
 
 }
