@@ -165,11 +165,132 @@ nav>ul li {
     width: 100%;
 }
 
+/* Online games section */
+.online-games-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Funny-videos {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.online-games-text {
+    color: #534C64;
+    text-align: center;
+    font-size: 1.13rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 342px;
+    height: 300px;
+    border-radius: 16px;
+
+    /* Only be added on hover */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.card p {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.87rem;
+}
+
+/* play games section */
+.play-games {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 250px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.play-games-img {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.play-games-img .big-img {
+    /* width: 634.833px; */
+    width: 75%;
+    height: 100%;
+}
+
+.play-games-img .small-img {
+    border-radius: 8px;
+    /* border: 5px solid #FFF; */
+    background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat;
+    height: 60%;
+    position: relative;
+    top: 290px;
+    right: 130px;
+
+    /* top: 365px;
+    right: 170px; */
+    /* left: 520px;
+    bottom: 230px; */
+    /* left: 490px;
+    bottom: 240px; */
+
+}
+
+.games-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-games-content {
+    /* border: 1px solid red; */
+    width: 50%;
+    /* position: relative;
+    left: 10px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive */
 @media screen and (max-width:576px) {
-    nav, nav ul {
+
+    nav,
+    nav ul {
         flex-direction: column;
     }
 
@@ -184,7 +305,8 @@ nav>ul li {
         padding: 45px 0px;
         margin-bottom: 60px;
     }
-    .banner-img{
+
+    .banner-img {
         margin-top: 50px;
         margin-bottom: -50px;
     }
@@ -205,11 +327,13 @@ nav>ul li {
         flex-direction: column;
         justify-content: center;
     }
+
     .banner {
         flex-direction: column-reverse;
         width: 100%;
     }
-    .banner-content-container{
+
+    .banner-content-container {
         width: auto;
     }
 
