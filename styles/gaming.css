@@ -166,6 +166,10 @@ nav>ul li {
 }
 
 /* Online games section */
+
+.play-games{
+    padding-top: 50px;
+}
 .online-games-title {
     color: #0B0223;
     text-align: center;
@@ -266,9 +270,91 @@ nav>ul li {
     left: 10px; */
 }
 
+/* game categories section */
+.game-categories {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    margin-top: 180px;
+    padding-top: 50px;
+    padding: 100px 0px;
+}
+.btn-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.game-categories>ul>li {
+    list-style: none;
+}
+
+.game-button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 10px 15px;
+    color: #0B0223;
+    font-size: 1.13rem;
+    font-weight: 600;
+    gap: 16px;
+}
+.game-button:hover{
+    color: #9579d8;
+    border-radius: 50%;
+    background-color: skyblue;
+    cursor: pointer;
+}
 
 
 
+
+
+/* footer */
+
+.footer-section {
+    border: 2px solid blue;
+    padding-top: 120px;
+    background: #0B0223;
+}
+
+.footer-section ul {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 55px;
+}
+
+.footer-section>ul>li {
+    list-style: none;
+
+    color: #FFF;
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    justify-content: center;
+    margin-bottom: 55px;
+    color: #FFF;
+}
+
+.footer-section .policy li {
+    color: rgba(255, 255, 255, 0.60);
+    /* text-align: center; */
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#copy {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    /* text-align: center; */
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 130px;
+    margin-top: 5px;
+}
 
 
 
