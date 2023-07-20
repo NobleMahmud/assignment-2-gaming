@@ -248,46 +248,7 @@ nav>ul li {
 
 
 /* play games section */
-.play-games {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-}
 
-.play-games-img {
-    display: flex;
-    margin-left: 50px;
-}
-
-.play-games-img .big-img {
-    width: 75%;
-    height: 100%;
-}
-
-.play-games-img .small-img {
-    border-radius: 8px;
-    /* background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat; */
-    height: 60%;
-    position: relative;
-    top: 290px;
-    right: 130px;
-
-}
-
-.games-content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.play-games-content {
-    /* border: 1px solid red; */
-    width: 60%;
-    margin-top: 50px;
-}
 .play-games-title{
     text-align: start;
 }
@@ -295,11 +256,12 @@ nav>ul li {
     text-align: start;
 }
 
-
-/* play-games-2 */
+.play-games-content {
+    width: 60%;
+    margin-top: 50px;
+}
 
 .play-games-container{
-    /* border: 1px solid red; */
     display: flex;
     max-width: 1440px;
     width: 100%;
@@ -307,16 +269,12 @@ nav>ul li {
     margin-top: 100px;
 }
 .play-games-img-container{
-    /* border: 2px solid blue; */
     position: relative;
     width: 60%;
-    /* margin-left: 1px; */
 }
 .play-games-content-container{
-    /* border: 2px solid red; */
     width: 40%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     
 }
@@ -511,6 +469,7 @@ nav>ul li {
     .btn-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        margin-right: 40px;
     }
     .game-button:hover {
         color: #9579d8;
@@ -603,11 +562,9 @@ nav>ul li {
 /* play game*/
 
 .play-games-container{
-    /* border: 1px solid red; */
     flex-direction: column-reverse;
 }
 .play-games-img-container{
-    /* border: 2px solid blue; */
     position: relative;
     width: 80%;
     margin-left:80px;
@@ -633,15 +590,12 @@ nav>ul li {
 
     /* game category */
     .btn-list {
-        flex-direction: column;
+        margin-right: 10px;
     }
 
     .list-1 {
         margin-bottom: 30px;
     }
-
-
-
 
     .game-button {
         background: #FFF;
