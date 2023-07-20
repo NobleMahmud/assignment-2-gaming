@@ -107,6 +107,8 @@ nav>ul li {
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
 
 }
 
@@ -118,6 +120,7 @@ nav>ul li {
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -342,11 +345,10 @@ nav>ul li {
 .btn-list {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.list-1 {
-    margin-bottom: 30px;
-}
+
 
 .game-categories>ul>li {
     list-style: none;
@@ -497,20 +499,28 @@ nav>ul li {
     /* games category responsive */
     .game-button {
         background: #FFF;
-        padding: 0;
+        padding: 10px 15px;
         color: #0B0223;
         font-size: 1.13rem;
-        font-weight: 600;
-        gap: 5px;
+        font-weight: 100;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .btn-list {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
+    .game-button:hover {
+        color: #9579d8;
+        border: 1px solid black;
+        border-radius: 100px;
+        /* background-color: skyblue; */
+        cursor: pointer;
+    }
+    
 
-    .list-1 {
-        margin-bottom: 30px;
-    }
 
 
     /* footer resposive */
@@ -590,7 +600,7 @@ nav>ul li {
     margin: 40px 0;   
 }
 
-/* play game 2 */
+/* play game*/
 
 .play-games-container{
     /* border: 1px solid red; */
@@ -620,18 +630,6 @@ nav>ul li {
 }
 
 
-    /* play games */
-    /* .play-games {
-        flex-direction: column;
-    }
-
-    .play-games-content {
-        margin-top: 120px;
-    }
-    .games-content-container {
-        margin-top: 150px;
-        margin-bottom: -100px;
-    } */
 
     /* game category */
     .btn-list {
@@ -641,6 +639,28 @@ nav>ul li {
     .list-1 {
         margin-bottom: 30px;
     }
+
+
+
+
+    .game-button {
+        background: #FFF;
+        padding: 0;
+        color: #0B0223;
+        font-size: 1.13rem;
+        font-weight: 100;
+        padding: 10px 30px;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .btn-list {
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
     /* footer */
 
