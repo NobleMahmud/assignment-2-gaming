@@ -11,7 +11,7 @@ body {
 
 /* navbar */
 nav {
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,26 +35,28 @@ nav ul {
 nav>ul li {
     display: flex;
     align-items: center;
-    margin: 30px;
+    margin: 35px;
 }
 
 .nav-btn {
-    padding: 20px 25px;
+    padding: 10px 20px;
     border: 0;
     text-align: center;
     font-size: 1.13rem;
     font-weight: 500;
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
+    background: rgba(11, 2, 35, 0.10);  
 }
 
 .nav-btn a {
     text-decoration: none;
     color: #3c325a;
+    display: flex;
+    align-items: center;
+    
 }
 
 .nav-icon {
-    /* margin-right: 15px; */
     margin-left: 24px;
 
 }
@@ -75,7 +77,6 @@ nav>ul li {
     /* text-align: center; */
     font-size: 3rem;
     font-weight: 600;
-
     margin-top: 150px;
     margin-bottom: -80px;
 }
@@ -88,16 +89,14 @@ nav>ul li {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     margin-bottom: -10px;
 }
 
 .banner-text {
     color: #534C64;
-    /* text-align: center; */
     font-size: 1.25rem;
     font-weight: 500;
-    /* text-transform: lowercase; */
+    margin-bottom: 25px;
 }
 
 .pink-btn {
@@ -108,7 +107,6 @@ nav>ul li {
     color: #FFF;
     font-size: 1.25rem;
     font-weight: 600;
-    /* margin: 40px 25px; */
 
 }
 
@@ -124,7 +122,6 @@ nav>ul li {
 
 
 .banner {
-    /* border: 1px solid blue; */
     background-color: #FFF;
     display: flex;
     justify-content: space-around;
@@ -154,12 +151,19 @@ nav>ul li {
 }
 
 .banner-img img {
-    /* border: 1px solid blue; */
     width: 100%;
 }
 
+
 /* Online games section */
 
+.play-1{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 .play-games {
     padding-top: 50px;
 }
@@ -197,10 +201,47 @@ nav>ul li {
 }
 
 .card {
-    width: 342px;
-    height: 300px;
+    position: relative;
+    width: 300px;
     border-radius: 16px;
+    justify-content: center;
 }
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    color: rgb(85, 85, 128);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.play-button, .watch-now {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 
 
 /* play games section */
@@ -208,27 +249,24 @@ nav>ul li {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 250px;
-    /* border: 1px solid blue; */
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
 }
 
 .play-games-img {
-    /* border: 1px solid red; */
     display: flex;
+    margin-left: 50px;
 }
 
 .play-games-img .big-img {
-    /* width: 634.833px; */
     width: 75%;
     height: 100%;
 }
 
 .play-games-img .small-img {
     border-radius: 8px;
-    /* border: 5px solid #FFF; */
-    background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat;
+    /* background: url(<path-to-image>), lightgray -7.209px 0px / 114.78% 100% no-repeat; */
     height: 60%;
     position: relative;
     top: 290px;
@@ -244,9 +282,14 @@ nav>ul li {
 
 .play-games-content {
     /* border: 1px solid red; */
-    width: 50%;
-    /* position: relative;
-    left: 10px; */
+    width: 60%;
+    margin-top: 50px;
+}
+.play-games-title{
+    text-align: start;
+}
+.play-games-text{
+    text-align: start;
 }
 
 /* game categories section */
@@ -285,8 +328,9 @@ nav>ul li {
 
 .game-button:hover {
     color: #9579d8;
-    border-radius: 50%;
-    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 100px;
+    /* background-color: skyblue; */
     cursor: pointer;
 }
 
@@ -330,7 +374,6 @@ nav>ul li {
 #copy {
     text-align: center;
     color: rgba(255, 255, 255, 0.60);
-    /* text-align: center; */
     font-size: 1rem;
     font-weight: 500;
     padding-bottom: 130px;
@@ -344,13 +387,16 @@ nav>ul li {
     nav ul {
         flex-direction: column;
     }
-
-
     .banner {
         flex-direction: column-reverse;
         width: 100%;
     }
-
+    #about{
+        margin-left: 100px;
+    }
+    #developers{
+        margin-left: 90px;
+    }
     .banner-content {
         position: static;
         padding: 45px 0px;
@@ -376,7 +422,7 @@ nav>ul li {
 
     .card-container {
         flex-direction: column;
-        gap: 200px;
+        gap: 50px;
         justify-content: center;
         align-items: center;
 
@@ -426,7 +472,6 @@ nav>ul li {
     }
 
 
-
     /* footer resposive */
     .footer-section ul {
         flex-wrap: wrap;
@@ -463,12 +508,16 @@ nav>ul li {
     .banner-content-container {
         width: auto;
     }
+    .banner-button{
+        padding-bottom: 30px;
+        margin-top: 50px;
+    }
 
 
     /* online games */
     .card-container {
         flex-direction: column;
-        gap: 200px;
+        gap: 50px;
         justify-content: center;
         align-items: center;
 
@@ -502,5 +551,4 @@ nav>ul li {
     .footer-section ul {
         flex-wrap: wrap;
         padding-right: 20px;
-
     }
